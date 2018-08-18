@@ -1,7 +1,44 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 <h1>Posts</h1>
 
-<p>Nu skal jeg bare lave en service</p>
+<div class="container">
 
-<p>Current count: <strong>{{ currentCount }}</strong></p>
+    <div class="row">
+        <div class="col-sm">
+            <p>
+                Current count: <strong>{{ currentCount }}</strong>
+            </p>
+            <button (click)="incrementCounter()">Increment</button>
+        </div>
 
-<button (click)="incrementCounter()">Increment</button>
+        <div class="col-sm">
+            <div class="alert alert-primary" role="alert">
+                Bootstrap test
+            </div>
+        </div>
+
+        <div class="col-sm">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item">Action</a>
+                    <a class="dropdown-item">Another action</a>
+                    <a class="dropdown-item">Something else here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+<div class="container">
+    <p>HALLO</p>
+
+    <p>Nu skal jeg bare lave en service</p>
+
+</div>
+

@@ -13,6 +13,5 @@ namespace aspnet_v5.Model
         public string Title { get; set; }
 
         public string Body { get; set; }
-
     }
 }
