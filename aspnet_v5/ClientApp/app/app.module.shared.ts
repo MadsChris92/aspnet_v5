@@ -11,6 +11,8 @@ import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { PostComponent } from './components/post/post.component';
 
+import { PostService } from './Services/post.service';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -32,6 +34,9 @@ import { PostComponent } from './components/post/post.component';
             { path: 'post', component: PostComponent },
             { path: '**', redirectTo: 'home' }
         ])
+    ],
+    providers: [
+        PostService
     ]
 })
 export class AppModuleShared {
